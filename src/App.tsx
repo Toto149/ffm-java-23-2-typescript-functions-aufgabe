@@ -25,8 +25,8 @@ function App() {
           { id: 3, name: "Summer Smith", status: "Alive", species: "Human", origin: "Earth"},
           { id: 13, name:"Alexander", status: "Dead", species: "Human", origin: "Earth"}
       ];
-    const filter = rickAndMortyApiCharacterList.filter((character : Character) :boolean => character.status ==="Alive" && character.species==="Human");
-    console.log(filter);
+    const filterAlive = rickAndMortyApiCharacterList.filter((character : Character) :boolean => character.status ==="Alive" && character.species==="Human");
+    console.log(filterAlive);
     const names : string[] = rickAndMortyApiCharacterList.map((char) => char.name);
     const namesAsString = names.reduce((s1,s2) => s1.concat(", " + s2));
 
